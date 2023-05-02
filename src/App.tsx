@@ -1,6 +1,10 @@
-export function App() {
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from './styles/themes/default'
 
+export function App() {
   return (
-    <div>Home</div>
+    <ThemeProvider theme={defaultTheme}>
+      <div>Hello</div>
+    </ThemeProvider>
   )
 }
